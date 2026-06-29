@@ -1,0 +1,275 @@
+{
+  "selection_rules": {
+    "max_days_within_category": 7,
+    "prefer_oldest_pending": true,
+    "categories_rotate": ["ai-llm", "agent", "cs-fundamentals", "engineering"]
+  },
+  "pool": [
+    {
+      "keyword": "Transformer Architecture",
+      "slug": "transformer-architecture",
+      "category": "ai-llm",
+      "tags": ["attention", "deep-learning", "nlp"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Self-Attention Mechanism",
+      "slug": "self-attention-mechanism",
+      "category": "ai-llm",
+      "tags": ["attention", "transformer", "deep-learning"],
+      "difficulty": 3,
+      "status": "incomplete",
+      "last_picked": "2026-06-29"
+    },
+    {
+      "keyword": "RLHF (Reinforcement Learning from Human Feedback)",
+      "slug": "rlhf",
+      "category": "ai-llm",
+      "tags": ["alignment", "reinforcement-learning", "training"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "RAG (Retrieval-Augmented Generation)",
+      "slug": "rag",
+      "category": "ai-llm",
+      "tags": ["retrieval", "generation", "knowledge"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "LoRA & QLoRA Fine-tuning",
+      "slug": "lora-qlora",
+      "category": "ai-llm",
+      "tags": ["fine-tuning", "peft", "efficiency"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "KV Cache Optimization",
+      "slug": "kv-cache",
+      "category": "ai-llm",
+      "tags": ["inference", "optimization", "memory"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Mixture of Experts (MoE)",
+      "slug": "mixture-of-experts",
+      "category": "ai-llm",
+      "tags": ["architecture", "scaling", "efficiency"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Prompt Engineering",
+      "slug": "prompt-engineering",
+      "category": "ai-llm",
+      "tags": ["prompting", "practical", "optimization"],
+      "difficulty": 1,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "LLM Quantization",
+      "slug": "llm-quantization",
+      "category": "ai-llm",
+      "tags": ["inference", "optimization", "efficiency"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Diffusion Models",
+      "slug": "diffusion-models",
+      "category": "ai-llm",
+      "tags": ["generative", "image", "probability"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Tool Use / Function Calling",
+      "slug": "tool-use",
+      "category": "agent",
+      "tags": ["agent", "function-calling", "api"],
+      "difficulty": 2,
+      "status": "completed",
+      "last_picked": "2026-06-30"
+    },
+    {
+      "keyword": "Agent Planning & Reasoning",
+      "slug": "agent-planning",
+      "category": "agent",
+      "tags": ["agent", "planning", "reasoning"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Multi-Agent Collaboration",
+      "slug": "multi-agent",
+      "category": "agent",
+      "tags": ["agent", "collaboration", "orchestration"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Agent Memory Systems",
+      "slug": "agent-memory",
+      "category": "agent",
+      "tags": ["agent", "memory", "context"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "ReAct Pattern",
+      "slug": "react-pattern",
+      "category": "agent",
+      "tags": ["agent", "reasoning", "action"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Agent Evaluation & Benchmarking",
+      "slug": "agent-evaluation",
+      "category": "agent",
+      "tags": ["agent", "evaluation", "benchmark"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Distributed Consensus (Paxos/Raft)",
+      "slug": "distributed-consensus",
+      "category": "cs-fundamentals",
+      "tags": ["distributed", "consensus", "consistency"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Database Indexing (B+Tree, LSM)",
+      "slug": "database-indexing",
+      "category": "cs-fundamentals",
+      "tags": ["database", "index", "performance"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "TCP Congestion Control",
+      "slug": "tcp-congestion-control",
+      "category": "cs-fundamentals",
+      "tags": ["networking", "tcp", "protocol"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Memory Management & Garbage Collection",
+      "slug": "memory-management-gc",
+      "category": "cs-fundamentals",
+      "tags": ["os", "memory", "runtime"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Linux Process Scheduling (CFS)",
+      "slug": "linux-scheduling",
+      "category": "cs-fundamentals",
+      "tags": ["os", "linux", "scheduling"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Compiler Design (Lexing, Parsing, Codegen)",
+      "slug": "compiler-design",
+      "category": "cs-fundamentals",
+      "tags": ["compiler", "parsing", "language"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "CAP Theorem & Distributed Transactions",
+      "slug": "cap-theorem",
+      "category": "cs-fundamentals",
+      "tags": ["distributed", "transaction", "consistency"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "System Design: Rate Limiter",
+      "slug": "system-design-rate-limiter",
+      "category": "engineering",
+      "tags": ["system-design", "scalability", "backend"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "System Design: Distributed Message Queue",
+      "slug": "system-design-message-queue",
+      "category": "engineering",
+      "tags": ["system-design", "messaging", "distributed"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Performance Profiling & Optimization",
+      "slug": "performance-profiling",
+      "category": "engineering",
+      "tags": ["performance", "profiling", "optimization"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Container & Kubernetes Networking",
+      "slug": "container-kubernetes-networking",
+      "category": "engineering",
+      "tags": ["container", "kubernetes", "networking"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    }
+  ],
+  "suggestions": [
+    "Flash Attention",
+    "Speculative Decoding",
+    "Constitutional AI",
+    "DPO (Direct Preference Optimization)",
+    "GraphRAG",
+    "Vector Databases Internals",
+    "Embedding Models",
+    "Agentic RAG",
+    "Code Generation Agents",
+    "LLM Security (Prompt Injection)",
+    "DNS Resolution",
+    "HTTP/3 & QUIC",
+    "eBPF Internals",
+    "Rust Ownership Model",
+    "Lock-Free Data Structures",
+    "LSM Tree vs B-Tree",
+    "Consistent Hashing",
+    "Bloom Filter",
+    "System Design: URL Shortener",
+    "System Design: Chat Application",
+    "System Design: Recommendation Engine"
+  ]
+}

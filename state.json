@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "date": "2026-06-29",
+      "slug": "self-attention-mechanism",
+      "keyword": "Self-Attention Mechanism",
+      "category": "ai-llm",
+      "status": "incomplete",
+      "materials_path": "materials/2026-06-29-self-attention-mechanism/",
+      "created_at": "2026-06-29T05:17:00+08:00"
+    },
+    {
+      "date": "2026-06-30",
+      "slug": "tool-use",
+      "keyword": "Tool Use / Function Calling",
+      "category": "agent",
+      "status": "completed",
+      "materials_path": "materials/2026-06-30-tool-use/",
+      "sources_verified": true,
+      "created_at": "2026-06-30T05:17:00+08:00",
+      "completed_at": "2026-06-30T10:30:00+08:00",
+      "feishu_folder": "https://dcnu6hpipt8w.feishu.cn/drive/folder/Modffvj7nliaXRdfi7JcXzw7n3f"
+    }
+  ]
+}
