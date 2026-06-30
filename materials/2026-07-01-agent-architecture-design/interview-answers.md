@@ -1,5 +1,7 @@
 # Agent Architecture Design — Interview Reference Answers
 
+评分标准依据：本文件综合 Anthropic、OpenAI Agents SDK、LangGraph、Qwen-Agent、Coze、AutoGen 与 OWASP LLM Top 10，总结生产 Agent 架构面试中的高频评估点。每题标注主要依据来源。[来源: Anthropic Building Effective Agents][来源: OpenAI Agents SDK][来源: LangGraph Overview][来源: Qwen-Agent][来源: Coze Docs][来源: Microsoft AutoGen][来源: OWASP LLM Top 10]
+
 ## 1. 架构总览
 
 满分回答要点：
@@ -22,6 +24,8 @@
 - 忽略权限和副作用。
 - 没有说明 workflow 和 agent 边界。
 
+主要依据：Anthropic 的 workflow/agent patterns、OpenAI Agents SDK 的 tools/guardrails/tracing、OWASP 风险分类。[来源: Anthropic Building Effective Agents][来源: OpenAI Agents SDK][来源: OWASP LLM Top 10]
+
 ## 2. Workflow vs Agent
 
 满分回答要点：
@@ -40,6 +44,8 @@
 
 - 认为 agent 一定比 workflow 高级。
 - 不讨论失败代价。
+
+主要依据：Anthropic 关于 workflows、agents 和复杂度取舍的建议。[来源: Anthropic Building Effective Agents]
 
 ## 3. 工具调用与副作用
 
@@ -60,6 +66,8 @@
 - 只考虑 function calling，不考虑业务事务。
 - 失败后盲目重试。
 
+主要依据：OWASP 对 excessive agency 和不安全工具调用风险的分类。[来源: OWASP LLM Top 10]
+
 ## 4. 状态与记忆
 
 满分回答要点：
@@ -79,6 +87,8 @@
 
 - 把 memory 全部等同于向量库。
 - 没有区分任务状态和长期偏好。
+
+主要依据：LangGraph 对 durable execution、memory、human-in-the-loop 的官方定位。[来源: LangGraph Overview]
 
 ## 5. 框架选型
 
@@ -102,6 +112,8 @@
 - 只按流行度选框架。
 - 不考虑部署和审计。
 
+主要依据：各框架/平台官方文档能力边界与生态定位。[来源: LangGraph Overview][来源: OpenAI Agents SDK][来源: Qwen-Agent][来源: Coze Docs][来源: Microsoft AutoGen]
+
 ## 6. 评测与线上问题定位
 
 满分回答要点：
@@ -120,6 +132,8 @@
 
 - 只看最终回答，不看中间步骤。
 - 没有失败分桶。
+
+主要依据：OpenAI Agents SDK tracing/guardrails、LangGraph production runtime，以及 OWASP 风险分类。[来源: OpenAI Agents SDK][来源: LangGraph Overview][来源: OWASP LLM Top 10]
 
 ## 7. 成本与延迟
 
@@ -142,6 +156,8 @@
 - 只说换更快模型。
 - 不看 P95 和节点级 latency。
 
+主要依据：Anthropic 关于优先简单 workflow 的建议，以及 OpenAI Agents SDK tracing 用于定位运行时成本/延迟的能力。[来源: Anthropic Building Effective Agents][来源: OpenAI Agents SDK]
+
 ## 8. Multi-Agent 取舍
 
 满分回答要点：
@@ -160,6 +176,8 @@
 
 - 把每个函数都包装成 agent。
 - 没有评估协作失败和成本。
+
+主要依据：Anthropic orchestrator-workers pattern 与 AutoGen multi-agent framework 定位。[来源: Anthropic Building Effective Agents][来源: Microsoft AutoGen]
 
 ## 来源
 

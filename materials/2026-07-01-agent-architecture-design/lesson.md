@@ -4,6 +4,8 @@
 
 Agent Architecture Design 讨论的不是“怎么写一个会调用工具的 prompt”，而是怎么把 LLM、工具、状态、知识、策略、安全、评测和运行时组织成一个可上线、可调试、可扩展的系统。
 
+本教案的主要归纳综合自 Anthropic 对 workflows/agents 的划分、OpenAI Agents SDK 的 agents/tools/handoffs/guardrails/tracing 抽象、LangGraph 的 durable execution/human-in-the-loop/memory 文档、Qwen-Agent 的 function calling/MCP/RAG/code interpreter 能力，以及 OWASP 对 LLM 应用风险的分类。[来源: Anthropic Building Effective Agents][来源: OpenAI Agents SDK][来源: LangGraph Overview][来源: Qwen-Agent][来源: OWASP LLM Top 10]
+
 一个工程化 Agent 通常包含 8 层：
 
 1. **入口层**：接收用户请求、会话身份、权限、租户、上下文。
@@ -21,6 +23,8 @@ Anthropic 对这件事的划分很实用：
 
 - **Workflow**：执行路径由开发者预先写死或半写死，例如 prompt chaining、routing、parallelization、orchestrator-workers、evaluator-optimizer。
 - **Agent**：LLM 能根据环境反馈动态决定下一步，工具调用链不完全预设。
+
+这个划分来自 Anthropic 的 "Building effective agents"，其中 workflow 被定义为通过预定义代码路径编排 LLM 和工具，agent 则由 LLM 动态指导自身流程和工具使用。[来源: Anthropic Building Effective Agents]
 
 面试里最容易犯的错是把所有东西都叫 Agent。一个生产系统往往是 **workflow 外壳 + agent 内核**：外层用状态机/工作流保证边界和可控性，内层在局部任务里允许模型自主规划。
 
@@ -77,6 +81,8 @@ Trace + Eval + Metrics
 
 LangGraph 的核心价值是把 Agent 表达成有状态图：节点代表模型调用、工具调用、人工审批或业务逻辑；边代表状态转移。它强调 durable execution、human-in-the-loop、memory 和 production deployment。
 
+这一节依据 LangGraph 官方文档对 durable execution、human-in-the-loop、memory、deployment 的定位总结。[来源: LangGraph Overview]
+
 适合：
 
 - 需要中断恢复的长任务。
@@ -88,6 +94,8 @@ LangGraph 的核心价值是把 Agent 表达成有状态图：节点代表模型
 
 OpenAI Agents SDK 把 agents、handoffs、guardrails、sessions、tracing 做成一套运行时抽象。它适合快速组织单 Agent 或多 Agent 应用，重点是工具调用、handoff 和 trace。
 
+这一节依据 OpenAI Agents SDK 官方文档中的 agents、tools、handoffs、guardrails、sessions 和 tracing 模块总结。[来源: OpenAI Agents SDK]
+
 适合：
 
 - 使用 OpenAI 生态。
@@ -97,6 +105,8 @@ OpenAI Agents SDK 把 agents、handoffs、guardrails、sessions、tracing 做成
 ### 4.3 框架型 Agent
 
 Qwen-Agent 提供 function calling、MCP、code interpreter、RAG、Chrome extension 等能力，定位是围绕 Qwen 模型构建应用的 agent framework。
+
+这一节依据 Qwen-Agent GitHub README 对 Function Calling、MCP、Code Interpreter、RAG 和 browser assistant 能力的说明总结。[来源: Qwen-Agent]
 
 适合：
 
@@ -108,6 +118,8 @@ Qwen-Agent 提供 function calling、MCP、code interpreter、RAG、Chrome exten
 
 Coze/扣子这类平台把 bot、workflow、knowledge、plugin、database、publish channels 做成低代码/平台能力。它反映了大厂产品化 Agent 的常见拆法：知识库、插件、工作流、变量、发布渠道和运营后台分离。
 
+这一节依据 Coze 官方开放文档对 bot、workflow、knowledge、plugin 等平台模块的说明总结。[来源: Coze Docs]
+
 适合：
 
 - 业务团队快速搭建。
@@ -117,6 +129,8 @@ Coze/扣子这类平台把 bot、workflow、knowledge、plugin、database、publ
 ### 4.5 Multi-Agent Framework
 
 AutoGen/CrewAI 这类框架强调多个 agent 协作、角色分工、对话式协同和任务编排。面试中要注意：multi-agent 很容易带来成本上升、错误传播、调试困难和一致性问题，所以不要默认作为第一选择。
+
+AutoGen 的多 agent 协作定位来自 Microsoft AutoGen 官方文档；关于成本、错误传播和调试复杂度是结合 Anthropic “保持简单、仅在收益明确时增加 agentic complexity”的建议推导。[来源: Microsoft AutoGen][来源: Anthropic Building Effective Agents]
 
 ## 5. 设计一个 Agent 的步骤
 
@@ -212,6 +226,8 @@ Agent 的上下文通常分成：
 - trace：每一步模型输入输出、工具调用、状态转移、错误。
 
 没有 trace 的 Agent 系统不可维护。你无法只看最终回答来判断错在 prompt、检索、工具、模型、状态机还是权限。
+
+工具权限、越权调用、prompt injection 和 excessive agency 的风险归纳参考 OWASP Top 10 for LLM Applications；trace/eval 的运行时抽象参考 OpenAI Agents SDK 和 LangGraph 文档。[来源: OWASP LLM Top 10][来源: OpenAI Agents SDK][来源: LangGraph Overview]
 
 ## 6. 框架选型
 
