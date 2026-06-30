@@ -4,3 +4,4 @@
 |------|--------|------|------|--------|------|------|
 | 2026-06-29 | Self-Attention Mechanism | ai-llm | 7 | 8 | ❌ | 未完成 — 可择日再学 |
 | 2026-06-30 | Tool Use / Function Calling | agent | 6 | 7 | ✅ | 7/7 面试通过，面试实录已归档 |
+| 2026-07-01 | Agent Architecture Design | engineering | 8 | 8 | ✅ | 8/8 面试通过，面试实录已归档 |
