@@ -31,6 +31,15 @@
       "sources_verified": true,
       "sources_count": 7,
       "created_at": "2026-07-01T05:17:00+08:00"
+    },
+    {
+      "date": "2026-07-01",
+      "slug": "agent-architecture-design",
+      "keyword": "Agent Architecture Design",
+      "category": "engineering",
+      "status": "exam_passed",
+      "materials_path": "materials/2026-07-01-agent-architecture-design/",
+      "passed_at": "2026-06-30T22:26:49+08:00"
     }
   ]
 }
