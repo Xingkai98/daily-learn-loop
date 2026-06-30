@@ -159,6 +159,69 @@
       "last_picked": null
     },
     {
+      "keyword": "MCP & Agent Protocols",
+      "slug": "mcp-agent-protocols",
+      "category": "agent",
+      "tags": ["agent", "mcp", "protocols", "a2a"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Agent Security & Permissioning",
+      "slug": "agent-security-permissioning",
+      "category": "agent",
+      "tags": ["agent", "security", "prompt-injection", "permissions"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Agent Observability & Tracing",
+      "slug": "agent-observability-tracing",
+      "category": "agent",
+      "tags": ["agent", "observability", "tracing", "debugging"],
+      "difficulty": 2,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Agent Runtime & Cost Engineering",
+      "slug": "agent-runtime-cost-engineering",
+      "category": "engineering",
+      "tags": ["agent", "runtime", "cost", "latency"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Code, GUI & Computer-use Agents",
+      "slug": "code-gui-computer-use-agents",
+      "category": "agent",
+      "tags": ["agent", "coding", "gui", "computer-use"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "RAG for Agents",
+      "slug": "rag-for-agents",
+      "category": "ai-llm",
+      "tags": ["agent", "rag", "agentic-rag", "graphrag"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
+      "keyword": "Agentic Post-training & Tool-use RL",
+      "slug": "agentic-post-training-tool-use-rl",
+      "category": "ai-llm",
+      "tags": ["agent", "post-training", "tool-use", "rl"],
+      "difficulty": 3,
+      "status": "pending",
+      "last_picked": null
+    },
+    {
       "keyword": "Distributed Consensus (Paxos/Raft)",
       "slug": "distributed-consensus",
       "category": "cs-fundamentals",
