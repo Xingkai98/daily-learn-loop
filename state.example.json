@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "date": "YYYY-MM-DD",
+      "slug": "example-topic",
+      "keyword": "Example Topic",
+      "category": "ai-llm",
+      "status": "materials_ready",
+      "materials_path": "materials/YYYY-MM-DD-example-topic/",
+      "sources_verified": true,
+      "sources_count": 5,
+      "created_at": "YYYY-MM-DDTHH:MM:SS+08:00",
+      "completed_at": null,
+      "feishu_folder": null
+    }
+  ]
+}

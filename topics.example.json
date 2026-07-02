@@ -2,14 +2,23 @@
   "selection_rules": {
     "max_days_within_category": 7,
     "prefer_oldest_pending": true,
-    "categories_rotate": ["ai-llm", "agent", "cs-fundamentals", "engineering"]
+    "categories_rotate": [
+      "ai-llm",
+      "agent",
+      "cs-fundamentals",
+      "engineering"
+    ]
   },
   "pool": [
     {
       "keyword": "Transformer Architecture",
       "slug": "transformer-architecture",
       "category": "ai-llm",
-      "tags": ["attention", "deep-learning", "nlp"],
+      "tags": [
+        "attention",
+        "deep-learning",
+        "nlp"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -18,16 +27,24 @@
       "keyword": "Self-Attention Mechanism",
       "slug": "self-attention-mechanism",
       "category": "ai-llm",
-      "tags": ["attention", "transformer", "deep-learning"],
+      "tags": [
+        "attention",
+        "transformer",
+        "deep-learning"
+      ],
       "difficulty": 3,
-      "status": "incomplete",
-      "last_picked": "2026-06-29"
+      "status": "pending",
+      "last_picked": null
     },
     {
       "keyword": "RLHF (Reinforcement Learning from Human Feedback)",
       "slug": "rlhf",
       "category": "ai-llm",
-      "tags": ["alignment", "reinforcement-learning", "training"],
+      "tags": [
+        "alignment",
+        "reinforcement-learning",
+        "training"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -36,7 +53,11 @@
       "keyword": "RAG (Retrieval-Augmented Generation)",
       "slug": "rag",
       "category": "ai-llm",
-      "tags": ["retrieval", "generation", "knowledge"],
+      "tags": [
+        "retrieval",
+        "generation",
+        "knowledge"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -45,7 +66,11 @@
       "keyword": "LoRA & QLoRA Fine-tuning",
       "slug": "lora-qlora",
       "category": "ai-llm",
-      "tags": ["fine-tuning", "peft", "efficiency"],
+      "tags": [
+        "fine-tuning",
+        "peft",
+        "efficiency"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -54,7 +79,11 @@
       "keyword": "KV Cache Optimization",
       "slug": "kv-cache",
       "category": "ai-llm",
-      "tags": ["inference", "optimization", "memory"],
+      "tags": [
+        "inference",
+        "optimization",
+        "memory"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -63,7 +92,11 @@
       "keyword": "Mixture of Experts (MoE)",
       "slug": "mixture-of-experts",
       "category": "ai-llm",
-      "tags": ["architecture", "scaling", "efficiency"],
+      "tags": [
+        "architecture",
+        "scaling",
+        "efficiency"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -72,7 +105,11 @@
       "keyword": "Prompt Engineering",
       "slug": "prompt-engineering",
       "category": "ai-llm",
-      "tags": ["prompting", "practical", "optimization"],
+      "tags": [
+        "prompting",
+        "practical",
+        "optimization"
+      ],
       "difficulty": 1,
       "status": "pending",
       "last_picked": null
@@ -81,7 +118,11 @@
       "keyword": "LLM Quantization",
       "slug": "llm-quantization",
       "category": "ai-llm",
-      "tags": ["inference", "optimization", "efficiency"],
+      "tags": [
+        "inference",
+        "optimization",
+        "efficiency"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -90,7 +131,11 @@
       "keyword": "Diffusion Models",
       "slug": "diffusion-models",
       "category": "ai-llm",
-      "tags": ["generative", "image", "probability"],
+      "tags": [
+        "generative",
+        "image",
+        "probability"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -99,25 +144,37 @@
       "keyword": "Tool Use / Function Calling",
       "slug": "tool-use",
       "category": "agent",
-      "tags": ["agent", "function-calling", "api"],
+      "tags": [
+        "agent",
+        "function-calling",
+        "api"
+      ],
       "difficulty": 2,
-      "status": "completed",
-      "last_picked": "2026-06-30"
+      "status": "pending",
+      "last_picked": null
     },
     {
       "keyword": "Agent Architecture Design",
       "slug": "agent-architecture-design",
       "category": "engineering",
-      "tags": ["agent", "architecture", "system-design"],
+      "tags": [
+        "agent",
+        "architecture",
+        "system-design"
+      ],
       "difficulty": 3,
-      "status": "completed",
-      "last_picked": "2026-07-01"
+      "status": "pending",
+      "last_picked": null
     },
     {
       "keyword": "Agent Planning & Reasoning",
       "slug": "agent-planning",
       "category": "agent",
-      "tags": ["agent", "planning", "reasoning"],
+      "tags": [
+        "agent",
+        "planning",
+        "reasoning"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -126,7 +183,11 @@
       "keyword": "Multi-Agent Collaboration",
       "slug": "multi-agent",
       "category": "agent",
-      "tags": ["agent", "collaboration", "orchestration"],
+      "tags": [
+        "agent",
+        "collaboration",
+        "orchestration"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -135,7 +196,11 @@
       "keyword": "Agent Memory Systems",
       "slug": "agent-memory",
       "category": "agent",
-      "tags": ["agent", "memory", "context"],
+      "tags": [
+        "agent",
+        "memory",
+        "context"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -144,7 +209,11 @@
       "keyword": "ReAct Pattern",
       "slug": "react-pattern",
       "category": "agent",
-      "tags": ["agent", "reasoning", "action"],
+      "tags": [
+        "agent",
+        "reasoning",
+        "action"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -153,7 +222,11 @@
       "keyword": "Agent Evaluation & Benchmarking",
       "slug": "agent-evaluation",
       "category": "agent",
-      "tags": ["agent", "evaluation", "benchmark"],
+      "tags": [
+        "agent",
+        "evaluation",
+        "benchmark"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -162,7 +235,12 @@
       "keyword": "MCP & Agent Protocols",
       "slug": "mcp-agent-protocols",
       "category": "agent",
-      "tags": ["agent", "mcp", "protocols", "a2a"],
+      "tags": [
+        "agent",
+        "mcp",
+        "protocols",
+        "a2a"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -171,7 +249,12 @@
       "keyword": "Agent Security & Permissioning",
       "slug": "agent-security-permissioning",
       "category": "agent",
-      "tags": ["agent", "security", "prompt-injection", "permissions"],
+      "tags": [
+        "agent",
+        "security",
+        "prompt-injection",
+        "permissions"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -180,7 +263,12 @@
       "keyword": "Agent Observability & Tracing",
       "slug": "agent-observability-tracing",
       "category": "agent",
-      "tags": ["agent", "observability", "tracing", "debugging"],
+      "tags": [
+        "agent",
+        "observability",
+        "tracing",
+        "debugging"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -189,7 +277,12 @@
       "keyword": "Agent Runtime & Cost Engineering",
       "slug": "agent-runtime-cost-engineering",
       "category": "engineering",
-      "tags": ["agent", "runtime", "cost", "latency"],
+      "tags": [
+        "agent",
+        "runtime",
+        "cost",
+        "latency"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -198,7 +291,12 @@
       "keyword": "Code, GUI & Computer-use Agents",
       "slug": "code-gui-computer-use-agents",
       "category": "agent",
-      "tags": ["agent", "coding", "gui", "computer-use"],
+      "tags": [
+        "agent",
+        "coding",
+        "gui",
+        "computer-use"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -207,7 +305,12 @@
       "keyword": "RAG for Agents",
       "slug": "rag-for-agents",
       "category": "ai-llm",
-      "tags": ["agent", "rag", "agentic-rag", "graphrag"],
+      "tags": [
+        "agent",
+        "rag",
+        "agentic-rag",
+        "graphrag"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -216,7 +319,12 @@
       "keyword": "Agentic Post-training & Tool-use RL",
       "slug": "agentic-post-training-tool-use-rl",
       "category": "ai-llm",
-      "tags": ["agent", "post-training", "tool-use", "rl"],
+      "tags": [
+        "agent",
+        "post-training",
+        "tool-use",
+        "rl"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -225,7 +333,11 @@
       "keyword": "Distributed Consensus (Paxos/Raft)",
       "slug": "distributed-consensus",
       "category": "cs-fundamentals",
-      "tags": ["distributed", "consensus", "consistency"],
+      "tags": [
+        "distributed",
+        "consensus",
+        "consistency"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -234,7 +346,11 @@
       "keyword": "Database Indexing (B+Tree, LSM)",
       "slug": "database-indexing",
       "category": "cs-fundamentals",
-      "tags": ["database", "index", "performance"],
+      "tags": [
+        "database",
+        "index",
+        "performance"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -243,7 +359,11 @@
       "keyword": "TCP Congestion Control",
       "slug": "tcp-congestion-control",
       "category": "cs-fundamentals",
-      "tags": ["networking", "tcp", "protocol"],
+      "tags": [
+        "networking",
+        "tcp",
+        "protocol"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -252,7 +372,11 @@
       "keyword": "Memory Management & Garbage Collection",
       "slug": "memory-management-gc",
       "category": "cs-fundamentals",
-      "tags": ["os", "memory", "runtime"],
+      "tags": [
+        "os",
+        "memory",
+        "runtime"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -261,7 +385,11 @@
       "keyword": "Linux Process Scheduling (CFS)",
       "slug": "linux-scheduling",
       "category": "cs-fundamentals",
-      "tags": ["os", "linux", "scheduling"],
+      "tags": [
+        "os",
+        "linux",
+        "scheduling"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -270,7 +398,11 @@
       "keyword": "Compiler Design (Lexing, Parsing, Codegen)",
       "slug": "compiler-design",
       "category": "cs-fundamentals",
-      "tags": ["compiler", "parsing", "language"],
+      "tags": [
+        "compiler",
+        "parsing",
+        "language"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -279,7 +411,11 @@
       "keyword": "CAP Theorem & Distributed Transactions",
       "slug": "cap-theorem",
       "category": "cs-fundamentals",
-      "tags": ["distributed", "transaction", "consistency"],
+      "tags": [
+        "distributed",
+        "transaction",
+        "consistency"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -288,7 +424,11 @@
       "keyword": "System Design: Rate Limiter",
       "slug": "system-design-rate-limiter",
       "category": "engineering",
-      "tags": ["system-design", "scalability", "backend"],
+      "tags": [
+        "system-design",
+        "scalability",
+        "backend"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -297,7 +437,11 @@
       "keyword": "System Design: Distributed Message Queue",
       "slug": "system-design-message-queue",
       "category": "engineering",
-      "tags": ["system-design", "messaging", "distributed"],
+      "tags": [
+        "system-design",
+        "messaging",
+        "distributed"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null
@@ -306,7 +450,11 @@
       "keyword": "Performance Profiling & Optimization",
       "slug": "performance-profiling",
       "category": "engineering",
-      "tags": ["performance", "profiling", "optimization"],
+      "tags": [
+        "performance",
+        "profiling",
+        "optimization"
+      ],
       "difficulty": 2,
       "status": "pending",
       "last_picked": null
@@ -315,7 +463,11 @@
       "keyword": "Container & Kubernetes Networking",
       "slug": "container-kubernetes-networking",
       "category": "engineering",
-      "tags": ["container", "kubernetes", "networking"],
+      "tags": [
+        "container",
+        "kubernetes",
+        "networking"
+      ],
       "difficulty": 3,
       "status": "pending",
       "last_picked": null

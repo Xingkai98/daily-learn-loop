@@ -1,0 +1,17 @@
+# Personal state
+state.json
+topics.json
+COMPLETED.md
+
+# Lark/Ffeishu auth
+.lark-cli/
+
+# Generated sprint artifacts
+sprint/
+tools/
+scripts/
+
+# OS
+.DS_Store
+__pycache__/
+*.pyc
